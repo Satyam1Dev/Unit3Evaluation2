@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+       #navbar{
+    display: flex;
+    gap: 30px;
+    border: 1px solid;
+  }
+  div#order-form {
+    width: 30%;
+    margin: auto;
+    padding-top: 30px;
+}
+input#name {
+   margin-top: 10px;
+}
+input#cvv {
+  margin-top: 10px;
+}
+input#expiry {
+  margin-top: 10px;
+}
+input#mobile {
+  margin-top: 10px;
+}
+#submit{
+  margin-top: 10px;
+}
+input#mobile{
+  margin-top: 10px;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Add navbar divs here-->
+      <!-- Link to bucket.html -->
+      <div>Login</div>
+      <div>SignUp</div>
+      <div >Home</div>     
+      <div><a href="checkout.html">CheckOut</a></div>
+      <div><a href="bucket.html">Bucket</a></div>
+      <div id="coffee_count">
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but like this "5" -->
+      </div>
+    </div>
+
+    <div id="order-form">
+      <form id="form">
+        <div>
+            <input id="name" type="text" placeholder="enter your name"><br>
+            <input id="card" type="number" placeholder="enter your card Number"><br>
+            <input id="cvv" typr="number" placeholder="enter cvv"><br>
+            <input id="expiry" type="date"> <br>
+            <input id="mobile" type="number" placeholder="enter mob. no."><br>
+            <input  id="submit" type="submit" value="Confirm Payment"><br>
+        </div>
+    </form>
+        
+    </div>
+  </body>
+</html>
+<script src="scripts\checkout.js"></script>
